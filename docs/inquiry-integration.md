@@ -54,7 +54,7 @@ The frontend SDK is pinned to a release compatible with the workspace's Node 22 
 
 ## EmailJS template variables
 
-The owner supplied template ID `template_cn7om1o` and temporary recipient `austenconor02@gmail.com`. These non-secret values are recorded in `functions/.env.example`. Service ID, public key, and the server-only private key are still required before automatic notification delivery can be enabled. `EMAILJS_ENABLED` and `INQUIRIES_ENABLED` remain false; the live form continues to use the email-app handoff.
+The owner supplied Gmail service ID `service_mk2cjul`, template ID `template_cn7om1o`, and temporary recipient `austenconor02@gmail.com`. These non-secret values are recorded in `functions/.env.example`. The public key and server-only private key are still required before automatic notification delivery can be enabled. `EMAILJS_ENABLED` and `INQUIRIES_ENABLED` remain false; the live form continues to use the email-app handoff.
 
 Set the template recipient to `{{to_email}}` and Reply-To to `{{reply_to}}`. A phone-only inquiry uses the configured owner address as Reply-To. Use escaped template variables for visitor-provided fields, rather than raw/triple-brace HTML. The adapter supplies:
 
