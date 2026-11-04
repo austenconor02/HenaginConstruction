@@ -1,0 +1,67 @@
+{
+  "logo": {
+    "source": "Supplied no-phone PNG; exterior padding cropped, near-black exterior matched to #000, artwork proportionally resized.",
+    "file": "logo-no-phone.webp",
+    "crop": {
+      "left": 69,
+      "top": 120,
+      "width": 1116,
+      "height": 953
+    },
+    "width": 800,
+    "height": 683,
+    "bytes": 271662,
+    "brandYellow": "#fed904"
+  },
+  "paintStrips": [
+    {
+      "file": "paint-strip-1.webp",
+      "width": 1200,
+      "height": 100,
+      "bytes": 109376,
+      "crop": {
+        "left": 27,
+        "top": 24,
+        "width": 2120,
+        "height": 176
+      }
+    },
+    {
+      "file": "paint-strip-2.webp",
+      "width": 1200,
+      "height": 136,
+      "bytes": 110196,
+      "crop": {
+        "left": 25,
+        "top": 223,
+        "width": 2120,
+        "height": 240
+      }
+    },
+    {
+      "file": "paint-strip-3.webp",
+      "width": 1200,
+      "height": 123,
+      "bytes": 135584,
+      "crop": {
+        "left": 26,
+        "top": 476,
+        "width": 2120,
+        "height": 218
+      }
+    }
+  ],
+  "texture": {
+    "method": "Programmatic flat-top hexagon outlines",
+    "displayOpacity": 0.05
+  },
+  "marketing": {
+    "method": "Built-in image_gen",
+    "disclosure": "AI-generated marketing illustrations, not actual project photographs.",
+    "scenes": [
+      "remodeling",
+      "painting",
+      "exterior"
+    ]
+  }
+}

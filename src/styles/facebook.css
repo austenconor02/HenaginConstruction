@@ -1,0 +1,108 @@
+.facebook-layout {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+}
+.facebook-copy,
+.facebook-card {
+  min-width: 0;
+}
+.facebook-button {
+  max-width: 100%;
+  height: auto;
+  min-height: 56px;
+  padding-block: 12px;
+  text-align: center;
+}
+.facebook-button svg,
+.facebook-card svg {
+  flex-shrink: 0;
+}
+.facebook-card {
+  display: block;
+  border: 1px solid var(--ploy-border-primary);
+  background: var(--ploy-background-primary);
+  transition: border-color 0.2s ease;
+}
+.facebook-card:hover {
+  border-color: var(--ploy-accent-primary);
+}
+.facebook-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--ploy-border-primary);
+}
+.facebook-card-top > svg:last-child {
+  margin-left: auto;
+  color: var(--ploy-accent-primary);
+}
+.facebook-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.facebook-brand img {
+  width: 224px;
+  max-width: 100%;
+  height: auto;
+}
+.facebook-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px;
+  border-top: 1px solid var(--ploy-border-primary);
+}
+.facebook-card-bottom > div {
+  min-width: 0;
+}
+.facebook-card-bottom strong {
+  display: block;
+  line-height: 1.15;
+}
+.facebook-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.facebook-card-arrow {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ploy-border-primary);
+  color: var(--ploy-accent-primary);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.facebook-card:hover .facebook-card-arrow {
+  background: var(--ploy-accent-primary);
+  color: var(--ploy-text-on-accent-primary);
+}
+@media (min-width: 768px) {
+  .facebook-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 64px;
+  }
+}
+@media (max-width: 359px) {
+  .facebook-copy h2 {
+    font-size: 2.75rem;
+  }
+  .facebook-card-top,
+  .facebook-card-bottom {
+    padding: 20px 16px;
+  }
+  .facebook-card-bottom {
+    gap: 10px;
+  }
+}

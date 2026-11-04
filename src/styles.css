@@ -1,0 +1,142 @@
+/* The reference design's tokens, fonts, utilities and breakpoints are in
+   styles/reference.css. Only application behavior belongs here. */
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+body {
+  min-width: 320px;
+  margin: 0;
+}
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button:not(:disabled),
+summary {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+:focus-visible {
+  outline: 2px solid var(--ploy-accent-primary);
+  outline-offset: 4px;
+}
+::selection {
+  background: var(--ploy-accent-primary);
+  color: var(--ploy-text-on-accent-primary);
+}
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  padding: 12px 20px;
+  color: #111;
+  background: #f7b500;
+  transform: translateY(-150%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.reference-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 56px;
+  padding: 0 28px;
+  border: 1px solid var(--ploy-button-primary-border);
+  border-radius: var(--radius-button);
+  font-family: var(--font-button);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  transition: background-color 0.15s ease;
+}
+.reference-button--primary {
+  color: var(--ploy-button-primary-text);
+  background: var(--ploy-button-primary-background);
+}
+.reference-button--primary:hover {
+  background: color-mix(in oklab, var(--ploy-button-primary-background) 90%, transparent);
+}
+.admin-notice {
+  display: flex;
+  min-height: 65vh;
+  max-width: 1280px;
+  margin: auto;
+  padding: 80px 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+}
+.admin-notice h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+}
+.admin-notice .button {
+  background: #f7b500;
+  color: #111;
+  padding: 16px 24px;
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+}
+@media (max-width: 359px) {
+  .hero__title {
+    font-size: 2.875rem;
+  }
+  .flip-house .max-w-lg,
+  .estimate > div > div,
+  .estimate-form > div {
+    min-width: 0;
+  }
+  .flip-house h2 {
+    font-size: 3rem;
+  }
+  .estimate-form button[type='submit'] {
+    padding-inline: 12px;
+    font-size: 16px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero__content {
+    animation: hero-enter 0.65s ease-out both;
+  }
+  .hero__badge {
+    animation: hero-enter 0.65s 0.2s ease-out both;
+  }
+  @keyframes hero-enter {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
