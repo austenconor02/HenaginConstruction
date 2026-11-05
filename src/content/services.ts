@@ -10,9 +10,9 @@ export interface Service {
 export const services: Service[] = [
   {
     id: 'custom-builds',
-    title: 'Custom builds & residential construction',
+    title: 'Custom built-ins & storage',
     description:
-      'Make room for your vision. Start a conversation about your next residential build.',
+      'Make room for your vision with shelving and fitted storage designed for your home.',
     icon: 'house',
   },
   {

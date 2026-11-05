@@ -7,10 +7,10 @@ export function ExteriorServices() {
             {'Skilled. Reliable. Detail driven.'}
           </h2>
           <p className="font-body typography-body text-pretty text-lg md:text-xl text-ploy-text-secondary mt-4 max-w-xl">
-            {'Outside work and bigger builds too. If your home needs it, ask us.'}
+            {'Exterior repairs and property work. If your home needs it, ask us.'}
           </p>
         </div>
-        <ul className="mt-12 grid grid-cols-2 gap-y-10 sm:grid-cols-3 lg:grid-cols-6 lg:divide-x lg:divide-ploy-border-primary">
+        <ul className="exterior-services-list mt-12 grid gap-y-10 lg:divide-x lg:divide-ploy-border-primary">
           <li className="exterior__item flex flex-col items-center px-4 text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,55 +109,6 @@ export function ExteriorServices() {
               {'Skid steer'}
             </h3>
             <p className="mt-2 text-sm text-ploy-text-secondary">{'Site work'}</p>
-          </li>
-          <li className="exterior__item flex flex-col items-center px-4 text-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-building2 lucide-building-2 size-10 text-ploy-accent-primary"
-              aria-hidden="true"
-            >
-              <path d="M10 12h4"></path>
-              <path d="M10 8h4"></path>
-              <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
-              <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
-              <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
-            </svg>
-            <h3 className="mt-4 font-heading text-2xl font-bold uppercase leading-none">
-              {'Custom homes'}
-            </h3>
-            <p className="mt-2 text-sm text-ploy-text-secondary">{'From the ground up'}</p>
-          </li>
-          <li className="exterior__item flex flex-col items-center px-4 text-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-house-plus size-10 text-ploy-accent-primary"
-              aria-hidden="true"
-            >
-              <path d="M12.35 21H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 .71-1.53l7-6a2 2 0 0 1 2.58 0l7 6A2 2 0 0 1 21 10v2.35"></path>
-              <path d="M14.8 12.4A1 1 0 0 0 14 12h-4a1 1 0 0 0-1 1v8"></path>
-              <path d="M15 18h6"></path>
-              <path d="M18 15v6"></path>
-            </svg>
-            <h3 className="mt-4 font-heading text-2xl font-bold uppercase leading-none">
-              {'ADUs'}
-            </h3>
-            <p className="mt-2 text-sm text-ploy-text-secondary">{'Extra living space'}</p>
           </li>
         </ul>
       </div>

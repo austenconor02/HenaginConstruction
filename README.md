@@ -15,11 +15,15 @@ Open the Vite Local URL. `npm.cmd run build` creates the production site in `dis
 
 ## Reference design
 
-The page uses the reference's exact logo, farmhouse hero, kitchen, bathroom, living-room built-ins, media wall, and filming images. Barlow Condensed and Hanken Grotesk fonts are served locally, along with the reference favicon. The black/yellow palette, text, spacing, image crops, responsive grids, sticky header, mobile menu, and hover treatments follow the original design.
+The page retains the reference's logo, farmhouse hero, kitchen, bathroom, living-room built-ins, media wall, and filming images. Barlow Condensed and Hanken Grotesk fonts are served locally, along with the reference favicon. The black/yellow palette, sticky header, mobile menu, and hover treatments follow the original design. Service copy reflects remodeling, repairs and built-ins; the owner confirmed that ground-up/custom-home construction is not offered, so that copy and the ADU offering have been removed.
 
 The page sections are individual React components under `src/components/`: `Header`, `Hero`, `Services`, `ProjectShowcase`, `BuiltIns`, `ExteriorServices`, `FlipHouse`, `Commitment`, `CallStrip`, `EstimateSection`, and `Footer`. `src/App.tsx` composes them. The original reference's design tokens and utilities are in `src/styles/reference.css`; application behavior and accessibility additions are in `src/styles.css`. No Ploy runtime, analytics, experiments, or platform badge is included.
 
 Images are in `public/images/reference/`; fonts are in `public/fonts/reference/`. These are the AI-generated design images supplied through the reference, kept separate from genuine published project albums in `src/content/publicContent.ts`. The reference's Flip House Chronicles copy is reproduced as requested. This design recreation is not independent verification of that affiliation or a record of completed jobs.
+
+The kitchen, bathroom and built-in galleries each contain four design images: the original plus three new generated images. `src/content/designGallery.ts` defines the images and descriptions; `ProjectShowcase` provides thumbnails, selection and the shared full-size photo viewer. New optimized WebPs and thumbnails live in `public/images/gallery/`, with source PNGs in `assets/generated/gallery/`. The gallery labels this imagery as AI-generated design inspiration and does not publish it as actual customer work. See [the image prompts](docs/gallery-image-prompts.md) for the complete prompt set and asset paths.
+
+The legacy internal service ID `custom-builds` remains for compatibility with existing inquiry validation and saved records; its public label and current use are built-ins only.
 
 The estimate form follows the reference's Name, Phone, Email, Project type, and project-description layout. The existing location, contact preference, and optional photo features remain in an expandable row. A brief connection-status note accounts for the small difference in form-panel height. Accessibility additions include a skip link, keyboard focus indicators, Escape-to-close mobile navigation, reduced-motion handling, and a narrow-screen heading adjustment.
 

@@ -25,10 +25,10 @@ export function Services() {
               <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             </svg>
             <h3 className="mt-4 font-heading text-xl font-bold uppercase leading-none md:text-2xl">
-              {'Custom builds'}
+              {'Built-ins'}
             </h3>
             <p className="mt-3 max-w-[16rem] text-sm text-ploy-text-secondary">
-              {'Bring your vision to life with quality and care.'}
+              {'Shelving and storage designed around your home.'}
             </p>
           </li>
           <li className="services__item flex flex-col items-center border border-ploy-border-primary bg-ploy-neutral-primary-s2 px-3 py-6 text-center last:col-span-2 md:px-5 md:py-8 lg:last:col-span-1 transition-colors hover:border-ploy-accent-primary">

@@ -168,7 +168,21 @@ try {
   assert.equal(await page.locator('.services__item').count(), 5)
   assert.equal(await page.locator('.projects__tile').count(), 3)
   assert.equal(await page.locator('.built-ins li').count(), 8)
-  assert.equal(await page.locator('.exterior__item').count(), 6)
+  assert.equal(await page.locator('.exterior__item').count(), 4)
+  assert.equal(await page.locator('.gallery-thumbnail').count(), 12)
+  const publicCopy = await page.locator('body').innerText()
+  assert.doesNotMatch(
+    publicCopy,
+    /custom homes?|from the ground up|new builds|custom builds|\bADUs\b/i,
+  )
+  assert.doesNotMatch(await page.title(), /Custom Builds/i)
+  assert.equal(
+    await page
+      .locator('#estimate-service option')
+      .getByText('Custom build', { exact: true })
+      .count(),
+    0,
+  )
   assert.equal(await page.locator('#estimate').count(), 1)
   const duplicateIds = await page.locator('[id]').evaluateAll((elements) => {
     const ids = elements.map((element) => element.id)
@@ -216,6 +230,26 @@ try {
     .locator('.review-window-controls')
     .getByRole('button', { name: 'Dismiss customer reviews' })
     .click()
+  for (const category of await page.locator('.gallery-category').all()) {
+    const thumbnails = category.locator('.gallery-thumbnail')
+    assert.equal(await thumbnails.count(), 4)
+    await thumbnails.nth(3).click()
+    assert.equal(await thumbnails.nth(3).getAttribute('aria-pressed'), 'true')
+    await category.locator('.gallery-featured img').evaluate((image) => image.decode())
+    await category.locator('.gallery-featured').click()
+    await page.getByRole('dialog').waitFor()
+    assert.equal(await page.locator('.lightbox-header p').textContent(), '4 / 4')
+    await page.getByRole('button', { name: 'Next photo', exact: true }).click()
+    assert.equal(await page.locator('.lightbox-header p').textContent(), '1 / 4')
+    await page.keyboard.press('Escape')
+    assert.equal(await page.getByRole('dialog').count(), 0)
+    assert.equal(
+      await category
+        .locator('.gallery-featured')
+        .evaluate((element) => element === document.activeElement),
+      true,
+    )
+  }
   await page
     .getByRole('navigation', { name: 'Main', exact: true })
     .getByRole('link', { name: 'Built-ins', exact: true })
@@ -390,7 +424,7 @@ try {
   await load(page, '/#admin')
   await page.getByRole('heading', { name: 'Admin access is coming soon.' }).waitFor()
   await page.getByRole('link', { name: 'Back to the website' }).click()
-  await page.getByRole('heading', { level: 1, name: /Residential/ }).waitFor()
+  await page.getByRole('heading', { level: 1, name: /Home.*remodeling/i }).waitFor()
 
   await load(page, `/tmp/${fixtureName}`)
   await page.getByRole('button', { name: 'Open QA gallery' }).click()

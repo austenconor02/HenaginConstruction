@@ -16,7 +16,7 @@ export function Footer() {
             {"Your home. Our passion. Let's build something beautiful."}
           </p>
           <p className="mt-3 max-w-sm text-sm text-ploy-text-secondary">
-            {'Custom builds. Remodels. Built-ins. Painting. Flooring. Handyman services. ADUs.'}
+            {'Kitchen and bathroom remodels. Built-ins. Painting. Flooring. Handyman services.'}
           </p>
         </div>
         <nav

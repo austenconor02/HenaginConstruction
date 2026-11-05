@@ -12,6 +12,7 @@
     "assets:prepare": "node scripts/prepare-assets.mjs",
     "assets:logo": "node scripts/prepare-logo.mjs",
     "assets:strips": "node scripts/prepare-paint-strips.mjs",
+    "assets:gallery": "node scripts/prepare-gallery.mjs",
     "build:backend": "npm --prefix functions run build",
     "test:backend": "npm --prefix functions test"
   },

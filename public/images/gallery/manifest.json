@@ -1,0 +1,74 @@
+[
+  {
+    "id": "kitchen-cream-oak",
+    "src": "/images/gallery/kitchen-cream-oak.webp",
+    "thumbnail": "/images/gallery/kitchen-cream-oak-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  },
+  {
+    "id": "kitchen-sage-walnut",
+    "src": "/images/gallery/kitchen-sage-walnut.webp",
+    "thumbnail": "/images/gallery/kitchen-sage-walnut-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  },
+  {
+    "id": "kitchen-bright-galley",
+    "src": "/images/gallery/kitchen-bright-galley.webp",
+    "thumbnail": "/images/gallery/kitchen-bright-galley-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  },
+  {
+    "id": "bathroom-oak-walk-in",
+    "src": "/images/gallery/bathroom-oak-walk-in.webp",
+    "thumbnail": "/images/gallery/bathroom-oak-walk-in-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  },
+  {
+    "id": "bathroom-classic-tub",
+    "src": "/images/gallery/bathroom-classic-tub.webp",
+    "thumbnail": "/images/gallery/bathroom-classic-tub-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  },
+  {
+    "id": "bathroom-sage-vanity",
+    "src": "/images/gallery/bathroom-sage-vanity.webp",
+    "thumbnail": "/images/gallery/bathroom-sage-vanity-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  },
+  {
+    "id": "built-in-oak-office",
+    "src": "/images/gallery/built-in-oak-office.webp",
+    "thumbnail": "/images/gallery/built-in-oak-office-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  },
+  {
+    "id": "built-in-window-library",
+    "src": "/images/gallery/built-in-window-library.webp",
+    "thumbnail": "/images/gallery/built-in-window-library-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  },
+  {
+    "id": "built-in-navy-mudroom",
+    "src": "/images/gallery/built-in-navy-mudroom.webp",
+    "thumbnail": "/images/gallery/built-in-navy-mudroom-thumb.webp",
+    "width": 1440,
+    "height": 1080,
+    "role": "AI-generated design inspiration"
+  }
+]

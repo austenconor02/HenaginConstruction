@@ -16,13 +16,13 @@ export function Hero() {
       <div className="mx-auto w-full max-w-7xl px-5 md:px-8 relative flex min-h-[620px] items-center py-20 md:min-h-[680px]">
         <div className="hero__content min-w-0 max-w-xl">
           <h1 className="hero__title font-heading typography-heading text-[3.25rem] uppercase sm:text-7xl lg:text-8xl">
-            <span className="block text-ploy-text-primary">{'Residential'}</span>
-            <span className="block text-ploy-accent-primary">{'construction'}</span>
-            <span className="block text-ploy-text-primary">{'solutions'}</span>
+            <span className="block text-ploy-text-primary">{'Home'}</span>
+            <span className="block text-ploy-accent-primary">{'remodeling'}</span>
+            <span className="block text-ploy-text-primary">{'& repairs'}</span>
           </h1>
           <p className="font-body typography-body text-pretty text-lg md:text-xl text-ploy-text-primary hero__subtitle mt-6 max-w-md">
             {
-              'Custom builds, remodels, built-ins, painting and flooring. Quality craftsmanship and fair pricing on every project, big or small.'
+              'Kitchen and bathroom remodels, custom built-ins, painting and flooring. Quality craftsmanship and fair pricing on every project, big or small.'
             }
           </p>
           <div className="hero__actions mt-9 flex flex-wrap items-center gap-x-8 gap-y-5">

@@ -52,11 +52,13 @@ export function EstimateForm({
     if (selectedService) {
       setDraft((previous) => ({ ...previous, service: selectedService }))
       setProjectType(
-        selectedService === 'soffit' || selectedService === 'siding'
-          ? 'fascia'
-          : selectedService === 'skid-steer'
-            ? 'other'
-            : selectedService,
+        selectedService === 'custom-builds'
+          ? 'built-ins'
+          : selectedService === 'soffit' || selectedService === 'siding'
+            ? 'fascia'
+            : selectedService === 'skid-steer'
+              ? 'other'
+              : selectedService,
       )
       serviceSelect.current?.focus({ preventScroll: true })
     }
@@ -194,7 +196,6 @@ export function EstimateForm({
     'w-full rounded-input border border-ploy-input-border bg-ploy-input-background px-4 text-base text-ploy-text-primary placeholder:text-ploy-text-secondary/70 transition-colors focus:border-ploy-accent-primary focus:outline-none focus:ring-1 focus:ring-ploy-accent-primary'
   const labelClass = 'font-eyebrow typography-eyebrow text-base uppercase text-ploy-text-primary'
   const projectOptions: { value: string; label: string; service: ServiceId }[] = [
-    { value: 'custom-builds', label: 'Custom build', service: 'custom-builds' },
     { value: 'remodeling', label: 'Remodel', service: 'remodeling' },
     { value: 'built-ins', label: 'Built-ins', service: 'custom-builds' },
     { value: 'painting', label: 'Painting', service: 'painting' },

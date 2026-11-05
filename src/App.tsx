@@ -39,7 +39,7 @@ export default function App() {
   useEffect(() => {
     document.title = admin
       ? 'Admin | Henagin Home Improvement'
-      : 'Henagin Home Improvement | Custom Builds, Remodels and Built-ins'
+      : 'Henagin Home Improvement | Remodeling, Repairs and Built-ins'
   }, [admin])
 
   return (
