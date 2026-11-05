@@ -250,6 +250,13 @@ try {
       true,
     )
   }
+  await page.setViewportSize({ width: 320, height: 844 })
+  await page.evaluate(() => document.fonts.ready)
+  await page.evaluate(
+    () => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))),
+  )
+  await noOverflow(page, 'Desktop browser resized to 320px after gallery use')
+  await page.setViewportSize({ width: 1440, height: 1000 })
   await page
     .getByRole('navigation', { name: 'Main', exact: true })
     .getByRole('link', { name: 'Built-ins', exact: true })
